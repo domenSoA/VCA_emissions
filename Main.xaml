@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1145,2748" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1145,3100" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
       <x:String>System.Activities</x:String>
@@ -65,7 +65,7 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1002,2683" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1002,3035" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="LowEmissionDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="UltraLowEmissionDT" />
@@ -77,20 +77,20 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Go to VCA website" sap:VirtualizedContainerService.HintSize="960,2445" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://carfueldata.vehicle-certification-agency.gov.uk">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Go to VCA website" sap:VirtualizedContainerService.HintSize="467,2897" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://carfueldata.vehicle-certification-agency.gov.uk">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Get data and put it in Qs" sap:VirtualizedContainerService.HintSize="926,2304" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Get data and put it in Qs" sap:VirtualizedContainerService.HintSize="422,2796" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'P'" sap:VirtualizedContainerService.HintSize="884,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'P'" sap:VirtualizedContainerService.HintSize="380,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -112,7 +112,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <Sequence DisplayName="Low Emission Only Queue" sap:VirtualizedContainerService.HintSize="884,971" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Low Emission Only Queue" sap:VirtualizedContainerService.HintSize="380,1217" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="counter" />
               </Sequence.Variables>
@@ -122,7 +122,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Uncheck UltraLow" sap:VirtualizedContainerService.HintSize="842,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Uncheck UltraLow" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -150,7 +150,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT '" sap:VirtualizedContainerService.HintSize="842,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT '" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -178,33 +178,53 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <Parallel DisplayName="Scrape for text and Url at the same time" sap:VirtualizedContainerService.HintSize="842,152" sap2010:WorkflowViewState.IdRef="Parallel_1">
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" SimulateClick="{x:Null}" ContinueOnError="True" DataTable="[LowEmissionDT]" DisplayName="Extract low emission dt" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;">
-                  <ui:ExtractData.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b3b51e7e-7ad8-4074-9b35-7916caf4b65e" InformativeScreenshot="e06cc5e2b5fda9a373c5f2998616ea70" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
-                  </ui:ExtractData.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:ExtractData>
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" SimulateClick="{x:Null}" ContinueOnError="True" DataTable="[Urls]" DisplayName="Extract Urls" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Url' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;">
-                  <ui:ExtractData.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b568caa-4de9-4e8f-95d6-c2b158ae11ec" InformativeScreenshot="bba13b2056973c5968703db551dce2af" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
-                  </ui:ExtractData.Target>
-                </ui:ExtractData>
-              </Parallel>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LowEmissionDT]" DisplayName="Add each entry to Low EmissionQ" sap:VirtualizedContainerService.HintSize="842,333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[LowEmissionDT]" DisplayName="Extract low emission dt" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;" SimulateClick="False">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b3b51e7e-7ad8-4074-9b35-7916caf4b65e" InformativeScreenshot="e06cc5e2b5fda9a373c5f2998616ea70" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ExtractData>
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Go from the start" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7adc99b7-3eea-4307-b1bd-835ead0d1418" InformativeScreenshot="182230f22ed6e3c885d019cfd4e86e4a" Selector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnFirstB' tag='INPUT' type='submit' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[Urls]" DisplayName="Extract Urls" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Url' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;" SimulateClick="False">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b568caa-4de9-4e8f-95d6-c2b158ae11ec" InformativeScreenshot="bba13b2056973c5968703db551dce2af" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[LowEmissionDT]" DisplayName="Add each entry to Low EmissionQ" sap:VirtualizedContainerService.HintSize="338,333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
@@ -218,30 +238,14 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="LowEmissionQ">
                         <ui:AddQueueItem.ItemInformation>
-                          <InArgument x:TypeArguments="x:String" x:Key="Manufacturer">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(0).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Model">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(1).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Description">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(2).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Url">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Urls.Rows(counter).Item(0).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Fuel type">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(3).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="CO2">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(4).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Fuel Consumption">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(5).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Tag">
-                            <Literal x:TypeArguments="x:String">LowEmission</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Manufacturer">[CurrentRow(0).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Model">[CurrentRow(1).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Description">[CurrentRow(2).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Url">[Urls.Rows(counter).Item(0).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Fuel type">[CurrentRow(3).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="CO2">[CurrentRow(4).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Fuel Consumption">[CurrentRow(5).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Tag">LowEmission</InArgument>
                         </ui:AddQueueItem.ItemInformation>
                       </ui:AddQueueItem>
                       <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
@@ -262,9 +266,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
-              <ui:ClearDataTable DataTable="[Urls]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="842,22" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+              <ui:ClearDataTable DataTable="[Urls]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="338,22" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
             </Sequence>
-            <Sequence DisplayName="Ultra-Low Emission Only Queue" sap:VirtualizedContainerService.HintSize="884,1055" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Ultra-Low Emission Only Queue" sap:VirtualizedContainerService.HintSize="380,1301" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="counter" />
               </Sequence.Variables>
@@ -274,7 +278,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Check UltraLow" sap:VirtualizedContainerService.HintSize="842,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Check UltraLow" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -302,7 +306,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Uncheck Low" sap:VirtualizedContainerService.HintSize="842,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Uncheck Low" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -330,7 +334,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT '" sap:VirtualizedContainerService.HintSize="842,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT '" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -358,33 +362,53 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <Parallel DisplayName="Scrape for text and Url at the same time" sap:VirtualizedContainerService.HintSize="842,152" sap2010:WorkflowViewState.IdRef="Parallel_2">
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" SimulateClick="{x:Null}" ContinueOnError="True" DataTable="[UltraLowEmissionDT]" DisplayName="Extract UltraLow emission dt" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;">
-                  <ui:ExtractData.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b3b51e7e-7ad8-4074-9b35-7916caf4b65e" InformativeScreenshot="e06cc5e2b5fda9a373c5f2998616ea70" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
-                  </ui:ExtractData.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:ExtractData>
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" SimulateClick="{x:Null}" ContinueOnError="True" DataTable="[Urls]" DisplayName="Extract Urls" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Url' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_6" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;">
-                  <ui:ExtractData.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b568caa-4de9-4e8f-95d6-c2b158ae11ec" InformativeScreenshot="bba13b2056973c5968703db551dce2af" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
-                  </ui:ExtractData.Target>
-                </ui:ExtractData>
-              </Parallel>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UltraLowEmissionDT]" DisplayName="Add each entry to Ultra-Low EmissionQ" sap:VirtualizedContainerService.HintSize="842,333" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[UltraLowEmissionDT]" DisplayName="Extract UltraLow emission dt" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;" SimulateClick="False">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b3b51e7e-7ad8-4074-9b35-7916caf4b65e" InformativeScreenshot="e06cc5e2b5fda9a373c5f2998616ea70" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ExtractData>
+              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Go from the start" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7adc99b7-3eea-4307-b1bd-835ead0d1418" InformativeScreenshot="182230f22ed6e3c885d019cfd4e86e4a" Selector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnFirstB' tag='INPUT' type='submit' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[Urls]" DisplayName="Extract Urls" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Url' attr='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="338,106" sap2010:WorkflowViewState.IdRef="ExtractData_6" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl id='ctl00_ContentPlaceHolder1_carResultsGrid1_btnNextB' tag='INPUT' type='submit' /&gt;" SimulateClick="False">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b568caa-4de9-4e8f-95d6-c2b158ae11ec" InformativeScreenshot="bba13b2056973c5968703db551dce2af" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UltraLowEmissionDT]" DisplayName="Add each entry to Ultra-Low EmissionQ" sap:VirtualizedContainerService.HintSize="338,333" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
@@ -398,30 +422,14 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddQueueItem_3" Priority="Normal" QueueType="LowEmissionQ">
                         <ui:AddQueueItem.ItemInformation>
-                          <InArgument x:TypeArguments="x:String" x:Key="Manufacturer">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(0).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Model">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(1).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Description">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(2).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Url">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Urls.Rows(counter).Item(0).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Fuel type">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(3).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="CO2">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(4).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Fuel Consumption">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(5).ToString" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="Tag">
-                            <Literal x:TypeArguments="x:String">UltraLow</Literal>
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Manufacturer">[CurrentRow(0).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Model">[CurrentRow(1).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Description">[CurrentRow(2).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Url">[Urls.Rows(counter).Item(0).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Fuel type">[CurrentRow(3).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="CO2">[CurrentRow(4).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Fuel Consumption">[CurrentRow(5).ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="Tag">UltraLow</InArgument>
                         </ui:AddQueueItem.ItemInformation>
                       </ui:AddQueueItem>
                       <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
